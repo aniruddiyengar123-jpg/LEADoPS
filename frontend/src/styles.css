@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #0b0d0d;
+  color: #f3f0eb;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+::selection {
+  background: #ffc06f;
+  color: #101010;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0b0d0d;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4c3b27;
+  border-radius: 999px;
+}
+
+.mono {
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+.cube-field {
+  background-color: #111211;
+  background-image:
+    linear-gradient(30deg, rgba(255, 190, 111, 0.055) 12%, transparent 12.5%, transparent 87%, rgba(255, 190, 111, 0.055) 87.5%, rgba(255, 190, 111, 0.055)),
+    linear-gradient(150deg, rgba(255, 190, 111, 0.055) 12%, transparent 12.5%, transparent 87%, rgba(255, 190, 111, 0.055) 87.5%, rgba(255, 190, 111, 0.055)),
+    linear-gradient(30deg, rgba(0, 0, 0, 0.26) 12%, transparent 12.5%, transparent 87%, rgba(0, 0, 0, 0.26) 87.5%, rgba(0, 0, 0, 0.26)),
+    linear-gradient(150deg, rgba(0, 0, 0, 0.26) 12%, transparent 12.5%, transparent 87%, rgba(0, 0, 0, 0.26) 87.5%, rgba(0, 0, 0, 0.26)),
+    linear-gradient(60deg, rgba(255, 190, 111, 0.04) 25%, transparent 25.5%, transparent 75%, rgba(255, 190, 111, 0.04) 75%, rgba(255, 190, 111, 0.04)),
+    linear-gradient(60deg, rgba(0, 0, 0, 0.28) 25%, transparent 25.5%, transparent 75%, rgba(0, 0, 0, 0.28) 75%, rgba(0, 0, 0, 0.28));
+  background-position:
+    0 0,
+    0 0,
+    50px 87px,
+    50px 87px,
+    0 0,
+    50px 87px;
+  background-size: 100px 174px;
+}
+
+.gold-shadow {
+  text-shadow: 0 8px 28px rgba(255, 179, 92, 0.34);
+}
+
+.panel {
+  border: 1px solid rgba(180, 126, 69, 0.42);
+  background: #1b1d1c;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.panel-soft {
+  border: 1px solid rgba(180, 126, 69, 0.28);
+  background: #151716;
+}
+
+.gold-button {
+  background: linear-gradient(180deg, #ffc978, #f6a51b);
+  color: #0f0d0a;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.34);
+}
+
+.grid-chart {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.text-ink,
+.panel .text-ink {
+  color: #fff8ed !important;
+}
+
+.text-sand,
+.panel .text-sand,
+[class*="text-sand/"],
+.panel [class*="text-sand/"] {
+  color: #f0dec8 !important;
+}
+
+.text-warning,
+.panel .text-warning {
+  color: #ffb347 !important;
+}
+
+.text-copper,
+.panel .text-copper {
+  color: #d6974d !important;
+}
+
+.panel {
+  color: #fff8ed;
+}
+
+.panel p,
+.panel span,
+.panel td,
+.panel th,
+.panel h1,
+.panel h2,
+.panel h3,
+.panel label {
+  color: inherit;
+}
+
+.panel input,
+.panel select {
+  background-color: #090b0b !important;
+  border-color: rgba(255, 192, 111, 0.5) !important;
+  color: #fff8ed !important;
+}
+
+.panel input::placeholder {
+  color: #b8a58e !important;
+}
+
+.panel select option {
+  background-color: #090b0b;
+  color: #fff8ed;
+}
+
+.panel input:-webkit-autofill,
+.panel input:-webkit-autofill:hover,
+.panel input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff8ed !important;
+  box-shadow: 0 0 0 1000px #090b0b inset !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
